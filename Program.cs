@@ -80,6 +80,19 @@ class Program
                     CalculateForSurface(cubeX, cubeWidth, cubeY, '+');
                 }
             }
+
+            Console.SetCursorPosition(0, 0);
+            for (int k = 0; k < width * heigth; k++)
+            {
+                Console.WriteLine(buffer[k]);
+                if (k % width == width - 1)
+                    Console.WriteLine();
+            }
+
+            A += 0.05f;
+            B += 0.05f;
+            C += 0.01f;
+            System.Threading.Thread.Sleep(16); //Tipo 60fps
         }
     }
 }
