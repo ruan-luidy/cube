@@ -92,7 +92,7 @@ class Program
             A += 0.05f;
             B += 0.05f;
             C += 0.01f;
-            System.Threading.Thread.Sleep(16); //tipo 60fps
+            System.Threading.Thread.Sleep(1); //tipo 60fps
         }
     }
 }
