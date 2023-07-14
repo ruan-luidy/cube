@@ -62,8 +62,8 @@ class Program
         Console.Clear();
         while (true)
         {
-            Array.Fill<char>(buffer, backgroundASCIICode);
-            Array.Fill<float>(zBuffer, 0);
+            Array.Fill(buffer, (char)backgroundASCIICode);
+            Array.Fill(zBuffer, 0);
 
             cubeWidth = 20;
             horizontalOffset = -2 * cubeWidth;
